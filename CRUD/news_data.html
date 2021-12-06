@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>News Data - Find_ID</title>
+  <meta charset="UTF-8">
+</head>
+
+  <body>
+    <h1>/Find News by ID/</h1>
+    <form onsubmit="window.open(`/news_data/${document.getElementById('textbox_id').value}/`); return false;">
+      <p>Input ID: <input id="textbox_id" type="text" required></p>
+      <input type="submit" value="Find">
+
+<!--      <button onclick="window.open(`/news_data/create/${document.getElementById('textbox_id').value}/`); return false;">Create</button>-->
+      <button onclick="window.open(`/news_data/edit/${document.getElementById('textbox_id').value}/`); return false;">Edit</button>
+      <button onclick="window.open(`/news_data/delete/${document.getElementById('textbox_id').value}/`); return false;">Delete</button>
+<!--      <button onclick="fetch(`/news_data/${document.getElementById('textbox_id').value}/`, { method: 'DELETE'})">Удалить</button>-->
+    </form><br>
+
+<!--    <button onclick="fetch(`/news_data/delete/${document.getElementById('textbox_id').value}/`, { method: 'DELETE'})">Удалить</button>-->
+
+    <button onclick="window.open(`/news_data/all/`); return false;">Show all</button><br>
+
+    <br><button onclick="window.open(`/news_data/create/`); return false;">Create</button>
+
+  </body>
+
+</html>

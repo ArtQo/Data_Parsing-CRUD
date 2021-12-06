@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News Data - Edit_ID</title>
+</head>
+<body>
+
+<p>Edit the news with ID = {{id}}</p>
+<form action="/news_data/edit/{{id}}/" method="get">
+    <input type="text" name="Article" value="{{old[0]}}" size="100"><br>
+    <input type="text" name="Pre_Body" value="{{old[1]}}" size="100"><br>
+    <input type="text" name="Link" value="{{old[2]}}" size="100"><br>
+    <br>
+    <input type="submit" name="save" value="Save">
+</form>
+
+</body>
+</html>

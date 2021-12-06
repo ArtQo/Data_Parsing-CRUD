@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News Data - Create_ID</title>
+</head>
+<body>
+
+<p>Add news to the database:</p>
+<form action="/news_data/create/" method="POST">
+  Article: <input type="text" size="100" name="Article"><br>
+  Pre_Body: <input type="text" size="100" name="Pre_Body"><br>
+  Link: <input type="text" size="100" name="Link"><br>
+  <br>
+  <input type="submit" name="save" value="Save">
+</form>
+
+<button onclick="window.open(`/news_data/`); return false;">Назад</button>
+
+</body>
+</html>
