@@ -11,8 +11,7 @@ import time
 
 # Для кнопки (Загрузить еще)
 
-driver = webdriver.Chrome(
-    '/Users/arturga/Desktop/parserDB/driver/chromedriver')  # Здесь нужно указать путь к драйверу
+driver = webdriver.Chrome('')  # Здесь нужно указать путь к драйверу
 wait = WebDriverWait(driver, 5)
 action = ActionChains(driver)
 
